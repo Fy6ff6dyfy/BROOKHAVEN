@@ -1,0 +1,91 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "مفتاح سكربت", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest" })
+
+function MakesScriptHub()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/b6E81C2T"))()
+
+end
+
+function CorrectkeyNotification()
+
+OrionLib:MakeNotification({
+
+    Name = "Correct key!",
+
+    Content = "You have entered the correct key!",
+
+    Image = "rbxassetid://4483345998",
+
+    Time = 5
+
+})
+
+end
+
+function InCorrectkeyNotification()
+
+OrionLib:MakeNotification({
+
+    Name = "InCorrect key!",
+
+    Content = "You have entered the Incorrect key!",
+
+    Image = "rbxassetid://4483345998",
+
+    Time = 5
+
+})
+
+end
+
+local Tab = Window:MakeTab({
+
+    Name = "key",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+Tab:AddTextbox({
+
+    Name = "enter key",
+
+    Default = "enter key",
+
+    TextDisappear = true,
+
+    Callback = function(Value)
+
+        _G.keInput = Value
+
+        
+
+    end      
+
+})
+
+Tab:AddButton({
+
+    Name = "Check key",
+
+    Callback = function()
+
+              if _G.keylnput == _G.key then
+
+      MakesScriptHub()
+
+      CorrectkeyNotification()
+
+      else
+
+        InCorrectkeyNotification()
+
+          end
+
+      end    
+
+})
