@@ -1,6 +1,6 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+محلي OrionLib = loadstring (اللعبة: HttpGet (('https://raw.githubusercontent.com/shlexware/Orion/main/source'))) ()
 
-local Window = OrionLib:MakeWindow({Name = "مفتاح سكربت", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest" })
+النافذة المحلية = OrionLib: MakeWindow ({Name = "مفتاح kسكربت" ، HidePremium = false ، SaveConfig = true ، ConfigFolder = "OrionTest})
 
 function MakesScriptHub()
 
@@ -86,6 +86,6 @@ Tab:AddButton({
 
           end
 
-      end    
-
-})
+      نهاية    
+o
+}
